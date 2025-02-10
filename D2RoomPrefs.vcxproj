@@ -32,6 +32,11 @@
     <ClInclude Include="src\pch.h" />
     <ClInclude Include="src\ProxyHeader.h" />
   </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="src\config\D2RoomPrefs.conf">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>

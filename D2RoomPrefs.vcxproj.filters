@@ -32,5 +32,13 @@
     <Filter Include="includes">
       <UniqueIdentifier>{bc840136-e2a5-4b8e-8a56-9e1cdf81bbd3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{5d158473-8e43-4409-bfa1-aab3ea2795de}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="src\config\D2RoomPrefs.conf">
+      <Filter>config</Filter>
+    </CopyFileToFolders>
   </ItemGroup>
 </Project>
