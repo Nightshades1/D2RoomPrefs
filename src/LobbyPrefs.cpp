@@ -46,10 +46,14 @@ static int Hook_Create_Game_Interface(int a1, int a2)
 {
 	auto x = sub_B480_orig(a1, a2);
 	DWORD* UI_Menu_CreateRoom_Password_Obj = (DWORD*)(D2Multi_Base + 0x3A060);
+	DWORD* UI_Menu_CreateRoom_Password_Count = (DWORD*)((char*)(*UI_Menu_CreateRoom_Password_Obj) + 0x50);
 	DWORD* UI_Menu_CreateRoom_Password_Text = (DWORD*)((char*)(*UI_Menu_CreateRoom_Password_Obj) + 0x5C);
 	DWORD* UI_Menu_CreateRoom_Desc_Obj = (DWORD*)(D2Multi_Base + 0x3A064);
+	DWORD* UI_Menu_CreateRoom_Desc_Count = (DWORD*)((char*)(*UI_Menu_CreateRoom_Desc_Obj) + 0x50);
 	DWORD* UI_Menu_CreateRoom_Desc_Text = (DWORD*)((char*)(*UI_Menu_CreateRoom_Desc_Obj) + 0x5C);
 	LobbyPrefs::ParseConfig();
+	*UI_Menu_CreateRoom_Desc_Count = D2RoomPrefs_Config->Desc.length();
+	*UI_Menu_CreateRoom_Password_Count = D2RoomPrefs_Config->Password.length();
 	wcscpy((wchar_t*)UI_Menu_CreateRoom_Password_Text, D2RoomPrefs_Config->Password.c_str());
 	wcscpy((wchar_t*)UI_Menu_CreateRoom_Desc_Text, D2RoomPrefs_Config->Desc.c_str());
 	return x;
