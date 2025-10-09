@@ -30,12 +30,14 @@
     <ClInclude Include="src\framework.h" />
     <ClInclude Include="src\LobbyPrefs.h" />
     <ClInclude Include="src\pch.h" />
-    <ClInclude Include="src\ProxyHeader.h" />
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="src\config\D2RoomPrefs.conf">
       <FileType>Document</FileType>
     </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\script\gen_def.py" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -116,9 +118,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
-      <OutputFile>$(OutDir)D2Ex2$(TargetExt)</OutputFile>
-      <ProgramDatabaseFile>$(OutDir)D2Ex2.pdb</ProgramDatabaseFile>
-      <ImportLibrary>$(OutDir)D2Ex2.lib</ImportLibrary>
+      <OutputFile>$(OutDir)version$(TargetExt)</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -139,9 +139,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <OutputFile>$(OutDir)D2Ex2$(TargetExt)</OutputFile>
-      <ProgramDatabaseFile>$(OutDir)D2Ex2.pdb</ProgramDatabaseFile>
-      <ImportLibrary>$(OutDir)D2Ex2.lib</ImportLibrary>
+      <OutputFile>$(OutDir)version$(TargetExt)</OutputFile>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
   </ItemDefinitionGroup>
