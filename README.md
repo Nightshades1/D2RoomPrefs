@@ -3,8 +3,6 @@ A Proxy dll made for Diablo 2 Annihilus mod<br>
 It allows to set the Password and Game description to change of game server, As i was bored to type gs2 every time i'm farming !<br>
 This is called only once Create Game interface is created (and also read your config file) so you can change of password/description manually in-game if wanted.<br>
 
-The values doesn't display correctly because this is wrote straight in memory but it work as intended 😎
-
 ## Installation
 1. Go in your game directory eg: `C:\Program Files (x86)\Diablo II Annihilus\Apps\AnnihilusBeta` and rename `D2Ex2.dll` to `D2Ex2_Orig.dll`.
 2. Get the `Release.zip` and extract it directly in `C:\Program Files (x86)\Diablo II Annihilus\Apps\AnnihilusBeta`
