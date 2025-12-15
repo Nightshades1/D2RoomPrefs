@@ -7,6 +7,11 @@ This is called only once Create Game interface is created (and also read your co
 1. Extract the `Release.zip` directly in your game folder, eg: `C:\Program Files (x86)\Diablo II Annihilus\Apps\AnnihilusBeta`.
 2. Make your changes in the `D2RoomPrefs.conf`.
 
+## Windows Permission
+To be able to edit `D2RoomPrefs.conf` as a standard user instead of having to run any text editor as admin because you don't have the permission to modify the file
+
+You can right click on `D2RoomPrefs.conf` -> Properties -> Security -> Modify -> Scroll down to your "Users (Your username\Your username) and bellow, tick "Modification" -> Apply -> Ok, Now you are free to edit it as a regular user.
+
 ## If the game crash
 Go in your windows advanced system settings -> performance, and tick Activate DEP for all programs & services<br>
 except those i select and add `Game.exe` from `C:\Program Files (x86)\Diablo II Annihilus\Apps\AnnihilusBeta` reboot and enjoy.<br>
