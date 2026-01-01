@@ -10,7 +10,7 @@ This is called only once Create Game interface is created (and also read your co
 ## Windows Permission
 To be able to edit `D2RoomPrefs.conf` as a standard user instead of having to run any text editor as admin because you don't have the permission to modify the file
 
-You can right click on `D2RoomPrefs.conf` -> `Properties` -> `Security` -> `Modify` -> Scroll down to your `Users (Your username\Your username)` and bellow tick "  `Modification` -> `Apply` -> `Ok`, Now you are free to edit it as a regular user.
+You can right click on `D2RoomPrefs.conf` -> `Properties` -> `Security` -> `Modify` -> Scroll down to your `Users (Your username\Your username)` and bellow tick `Modification` -> `Apply` -> `Ok`, Now you are free to edit it as a regular user.
 
 ## If the game crash
 ### Windows 10 and above
